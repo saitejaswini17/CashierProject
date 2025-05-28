@@ -1,60 +1,99 @@
-CashierProject
-A simple Python console application that simulates a cashier’s workflow at a supermarket. The program allows a cashier to enter purchased products, calculates subtotals, applies membership discounts, and displays the final amount.
+---
 
-Features
-Product Entry: Add multiple products and their quantities to a bill.
-Price Calculation: Automatically calculates the subtotal for each item using preset prices.
-Membership Discounts: Supports three membership levels (Gold, Silver, Bronze) with tiered discounts for bills over $25.
-Summary Output: Displays the total bill, any discounts applied, and the final amount due.
-How to Use
-Run the Script:
-Execute cashierproject.py using Python 3.
+# 🛒 CashierProject
 
-bash
-python cashierproject.py
-Enter Products:
+A beginner-friendly supermarket cashier program—built in Python while learning with the **PythonX** app!  
+This project demonstrates practical programming skills by simulating a real-world checkout experience, making it perfect for learners and those looking for simple, interactive code examples.
 
-Press A to add a new product.
-Type the product name and quantity.
-Repeat for each item.
-Press Q when all items are entered.
-Enter Membership:
+---
 
-When prompted, enter the customer’s membership level: gold, silver, bronze, or leave blank for none.
-View Bill:
+## 🌱 About This Project
 
-The script displays the subtotal for each product, any discount applied, and the final amount.
-Product Price List
-Product	Price ($)
-biscuit	3
-chicken	5
-egg	1
-fish	3
-coke	2
-bread	2
-apple	3
-onion	3
-Discount Policy
-Bill $25 or more:
-Gold: 20% off
-Silver: 10% off
-Bronze: 5% off
-Bill under $25: No discount
-Example
-Code
-press A to add product and Q to quit : A
-enter product : biscuit
-enter quantity : 2
-press A to add product and Q to quit : Q
-enter customer membership : gold
-biscuit$3x2=6
-20% off for gold membership on total amount :$4.8
-the discounted amount is $ 4.8
-Notes
-Only products listed in the price table are accepted.
-Input is case-sensitive; enter product names exactly as shown.
-License
-This project is provided for educational purposes.
+This project was created as part of my journey learning Python using the [PythonX](https://play.google.com/store/apps/details?id=com.rahul.pythonx) app. It shows how you can apply basic programming concepts—like functions, loops, conditionals, and dictionaries—to build something useful and fun!
 
-Feel free to modify the content to better fit your project’s goals!
+---
 
+## ✨ Features
+
+- **Easy Product Entry:**  
+  Add any products and quantities, one by one, with friendly prompts.
+- **Automatic Subtotals:**  
+  Instantly see the subtotal for each product.
+- **Membership Discounts:**  
+  Apply discounts for Gold, Silver, or Bronze members automatically.
+- **Simple, Interactive Flow:**  
+  Designed for easy use and clear output—great for beginners!
+- **Fully Customizable:**  
+  Add your own products, prices, or membership types with just a few code edits.
+
+---
+
+## 🚀 How to Use
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/saitejaswini17/CashierProject.git
+   cd CashierProject
+   ```
+
+2. **Run the script:**
+   ```bash
+   python cashierproject.py
+   ```
+
+3. **Follow the instructions:**
+   - Press `A` to add each product.
+   - Enter the product name and quantity.
+   - Press `Q` to finish entering products.
+   - Enter the customer’s membership type (`gold`, `silver`, or `bronze`) for discount.
+
+---
+
+## 🏷️ Membership Discounts
+
+| Membership | Discount (on $25+) |
+|------------|-------------------|
+| Gold       | 20%               |
+| Silver     | 10%               |
+| Bronze     | 5%                |
+
+_No discount for bills less than $25._
+
+---
+
+## 📦 Price List
+
+- Biscuit: $3
+- Chicken: $5
+- Egg: $1
+- Fish: $3
+- Coke: $2
+- Bread: $2
+- Apple: $3
+- Onion: $3
+
+---
+
+## 💡 Customization
+
+- Change or add products by editing the `price_data` dictionary in the code.
+- Adjust membership discounts or add new types in the `get_discount` function.
+
+---
+
+## 🙋 Why I Built This
+
+I made this project while learning Python basics with the [PythonX](https://play.google.com/store/apps/details?id=com.rahul.pythonx) app. It helped me understand how to use functions, data structures, user input, and simple logic to solve everyday problems.  
+If you’re learning Python too, I hope this project helps and inspires you!
+
+---
+
+## 📄 License
+
+This project is open-source under the [MIT License](LICENSE).
+
+---
+
+> **Made with ❤️ by [saitejaswini17](https://github.com/saitejaswini17) while learning Python on PythonX**
+
+---
